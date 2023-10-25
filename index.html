@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/header_nav.css">
+    <link rel="stylesheet" href="css/audio_player.css">
+    <link rel="stylesheet" href="css/artical.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div id="audio_player">
+            <main>
+                <header id="header">
+                      
+                    <nav>
+                        <img src="img/logo.jpg" alt="">
+                        <h2 id="siteName">موقع بث قنوات الراديو</h2>
+                        <p id="radio-title">اسم اغنية</p>
+                    </nav>
+                </header>
+    
+     
+                <article id="player_buttons">
+                    <img src="img/back.png" alt="" id="back">
+                    <img src="img/play.png" alt="" id="play">
+                    <img src="img/next.png" alt="" id="next">
+                </article>
+    
+                <article>
+                    <audio src="" id="audio_file"></audio>
+                    <h2>الصوت</h2>
+                    <input id="volume" type="range" value="50" min="0" max="100" id="range">  
+                    <h2>السرعة</h2>
+                    <input id="speed" type="range" value="100" min="0" max="200" id="range">         
+                </article>
+    
+                
+                <article id="colors">
+                        <button id="color-1"></button>
+                        <button id="color-2"></button>
+                        <button id="color-3"></button>
+                        <button id="color-4"></button>
+               </article>
+    
+               <!-- <div id="countries">
+                 <button id="Yemen"></button>
+                 <button id="Sudia"></button>
+                 <button id="Kwiut"></button>
+                 <button id="Oman"></button>
+               </div> -->
+    
+               <footer>
+    
+               </footer>
+            </main>
+        </div>
+    </div>
+    
+    
+    <script src="script/colors.js"></script>
+    <script src="script/player_buttons.js"></script>
+    <script src="script/resize.js"></script>
+    <script src="script/speedvolume.js"></script>
+    <script src="script/volume.js"></script>
+
+</body>
+</html>
